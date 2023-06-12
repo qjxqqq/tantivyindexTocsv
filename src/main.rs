@@ -17,7 +17,7 @@ fn main() -> anyhow::Result<()> {
 
     // 获取CSV文件句柄
     let csv_file = File::create("output.csv")?;
-    let mut csv_writer = WriterBuilder::new().has_headers(true).from_writer(csv_file);
+    let mut csv_writer = WriterBuilder::new().delimiter(b'\x01').has_headers(true).from_writer(csv_file);
 
     // 获取所有的doc
     let searcher = index.reader()?.searcher();
@@ -61,16 +61,16 @@ fn main() -> anyhow::Result<()> {
         let ipfs_cid: String = doc.get_first(schema.get_field("ipfs_cid").unwrap()).unwrap().as_text().unwrap().to_string();
 
         // 将字段写入CSV记录中
-        csv_record.push(title);
-        csv_record.push(author);
-        csv_record.push(publisher);
-        csv_record.push(extension);
-        csv_record.push(filesize);
-        csv_record.push(language);
-        csv_record.push(year);
-        csv_record.push(pages);
-        csv_record.push(isbn);
-        csv_record.push(ipfs_cid);
+        csv_record.push(title.replace("\n", " "));
+        csv_record.push(author.replace("\n", " "));
+        csv_record.push(publisher.replace("\n", " "));
+        csv_record.push(extension.replace("\n", " "));
+        csv_record.push(filesize.replace("\n", " "));
+        csv_record.push(language.replace("\n", " "));
+        csv_record.push(year.replace("\n", " "));
+        csv_record.push(pages.replace("\n", " "));
+        csv_record.push(isbn.replace("\n", " "));
+        csv_record.push(ipfs_cid.replace("\n", " "));
 
         // 将CSV记录写入CSV文件
         csv_writer.write_record(csv_record)?;
