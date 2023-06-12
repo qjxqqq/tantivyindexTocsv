@@ -52,5 +52,6 @@ csv_record.push(ipfs_cid);`
 
 
 
+我的索引结构
 
-
+![image-20230612161721891](/Users/qujiaxin/Library/Application Support/typora-user-images/image-20230612161721891.png)
