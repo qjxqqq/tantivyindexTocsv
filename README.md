@@ -50,14 +50,8 @@ csv_record.push(ipfs_cid);`
 
 后面有时间会优化下，把字段写入配置文件
 我的索引结构
-index
-├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.fast
-├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.fieldnorm
-├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.idx
-├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.pos
-├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.store
-├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.term
-└── meta.json
+<img width="355" alt="image" src="https://github.com/qjxqqq/tantivyindexTocsv/assets/52905414/027186d0-69a0-4bc0-bb12-4dd70554fa23">
+
 
 
 
