@@ -53,6 +53,13 @@ csv_record.push(ipfs_cid);`
 
 
 我的索引结构
-![Uploading image.png…]()
+index
+├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.fast
+├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.fieldnorm
+├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.idx
+├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.pos
+├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.store
+├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.term
+└── meta.json
 
 的
