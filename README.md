@@ -49,9 +49,6 @@ csv_record.push(ipfs_cid);`
 # 其他
 
 后面有时间会优化下，把字段写入配置文件
-
-
-
 我的索引结构
 index
 ├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.fast
@@ -62,4 +59,9 @@ index
 ├── fb90ebdd6e5a43db8f09fe8e0fdeb84c.term
 └── meta.json
 
-的
+
+
+
+
+
+
